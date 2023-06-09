@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  flex-direction: row;
+
+  place-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  box-sizing: border-box;
+
+  border-bottom: 1px solid #f2f5f9;
+  background-color: #fdfdfd;
+
+  background: #fdfdfd;
+  padding: 8px 12px;
+  width: 100%;
+  color: #263141;
+
+  &__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0;
+    border-radius: 8px;
+
+    /* Grayscale/200 */
+
+    background: #f2f5f9;
+    padding: 14px;
+
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.name,
+.description {
+  margin: 0;
+  margin-left: -8px;
+}
+
+.description {
+  font-feature-settings: "salt" on, "liga" off;
+  width: 153px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  font-family: "Inter";
+}

@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  background-color: #f2f5f9;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  color: #263141;
+
+  &__wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    place-content: center;
+    align-items: center;
+    gap: 24px;
+    max-width: 1440px;
+  }
+}
