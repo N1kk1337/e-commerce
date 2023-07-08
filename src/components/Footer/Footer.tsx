@@ -5,10 +5,11 @@ import styles from "./Footer.module.scss";
 
 export default function Footer() {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <div className={styles.footer__wrapper}>
         <div className={styles.footer__container}>
           <Logo />
+          <p>Соцсети</p>
         </div>
         <div className={styles.footer__container}>
           <h3>Пользователю</h3>
@@ -35,6 +36,6 @@ export default function Footer() {
           Copyright © 2023 Behoof, Inc. Все права защищены
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

@@ -13,33 +13,38 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <Logo />
-      <p className={styles.description}>Лучшие цены в интернет-магазинах </p>
-      <SearchBar />
-      <button
-        className={styles.header__button}
-        type="button"
-        onClick={() => setIsLiked(!isLiked)}
-        onKeyDown={() => setIsLiked(!isLiked)}
-      >
-        <img alt="like" src={like} />
-      </button>
-      <button
-        className={styles.header__button}
-        type="button"
-        onClick={() => alert("compare")}
-        onKeyDown={() => alert("compare")}
-      >
-        <img alt="compare" src={chart} />
-      </button>
-      <button
-        className={styles.header__button}
-        type="button"
-        onClick={() => alert("profile")}
-        onKeyDown={() => alert("profile")}
-      >
-        <img alt="profile" src={profile} />
-      </button>
+      <div className={styles.header__container}>
+        <Logo />
+        <p className={styles.description}>
+          Лучшие цены
+          <br />в интернет-магазинах{" "}
+        </p>
+        <SearchBar />
+        <button
+          className={styles.header__button}
+          type="button"
+          onClick={() => setIsLiked(!isLiked)}
+          onKeyDown={() => setIsLiked(!isLiked)}
+        >
+          <img alt="like" src={like} />
+        </button>
+        <button
+          className={styles.header__button}
+          type="button"
+          onClick={() => alert("compare")}
+          onKeyDown={() => alert("compare")}
+        >
+          <img alt="compare" src={chart} />
+        </button>
+        <button
+          className={styles.header__button}
+          type="button"
+          onClick={() => alert("profile")}
+          onKeyDown={() => alert("profile")}
+        >
+          <img alt="profile" src={profile} />
+        </button>
+      </div>
     </header>
   );
 }

@@ -1,13 +1,11 @@
+@use "../../utils/styles.scss" as *;
+
 .header {
   display: flex;
   flex-direction: row;
 
   place-content: center;
   align-items: center;
-
-  gap: 20px;
-
-  box-sizing: border-box;
 
   border-bottom: 1px solid #f2f5f9;
   background-color: #fdfdfd;
@@ -16,6 +14,18 @@
   padding: 8px 12px;
   width: 100%;
   color: #263141;
+  &__container {
+    display: flex;
+    flex-direction: row;
+
+    place-content: center;
+    align-items: center;
+
+    gap: 20px;
+    @include wrapper;
+
+    box-sizing: border-box;
+  }
 
   &__button {
     display: flex;
@@ -23,8 +33,6 @@
     align-items: center;
     border: 0;
     border-radius: 8px;
-
-    /* Grayscale/200 */
 
     background: #f2f5f9;
     padding: 14px;
@@ -38,6 +46,7 @@
 .description {
   margin: 0;
   margin-left: -8px;
+  white-space: nowrap;
 }
 
 .description {
